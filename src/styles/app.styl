@@ -1,0 +1,130 @@
+// @import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
+// @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+// @import url('https://fonts.googleapis.com/css?family=Blinker&display=swap')
+*
+    // outline 1px solid red
+    box-sizing border-box
+    padding 0
+    margin 0
+body
+    font-family "Open Sans", serif
+.wrapper
+    background linear-gradient(to bottom, #2980B9, #6DD5FA, #FFFFFF)
+    padding 5vh 5vw
+    display flex
+    height 100vh
+    overflow hidden
+.main
+    height 100%
+    width 100vw
+    background rgba(255,255,255,0.3)
+    display flex
+    justify-content center
+    align-items center
+    text-align center
+    border-radius 3vw
+    flex-direction column 
+    position relative
+    text-align center
+    // border 1px solid red
+.title
+    position absolute
+    display flex
+    justify-content center
+    align-items center
+    width 100%
+    height 20vh
+    top 0
+    font-size 2.7vmin
+    padding-bottom 4vh
+    
+
+.content
+    display flex
+    width 100%
+    height 60vh
+    justify-content flex-start
+    align-items flex-start
+    // flex-wrap wrap
+    & .left
+        width 50%
+        height 30vh
+        & form 
+            width 100%
+            height 30vh
+            display flex
+            justify-content space-around
+            margin-top 3vh
+            align-items center
+            flex-direction column
+            & input
+                font-size 2.5vmin
+                margin 1%
+                padding 2%
+                width 35vw
+                height 7vh
+                border-radius 2vw
+                border 0
+            & button
+                width 20vw
+                height 5vh
+                font-size 2.5vmin
+                border 2px solid black
+                border-radius 2vw
+                background transparent
+                margin 1% 0
+                &:active
+                    background #000
+                    color White
+            padding-top 0
+            margin-top 0
+            
+    & .weather
+        margin 1% 0
+        height 30vh
+        background #6DD5FA
+        text-align left
+        display flex
+        justify-content center
+        align-items center
+        
+                
+        
+    & .right
+        background #FFFFFF
+        width 50%
+        padding 0 1%
+        height 60vh
+        display flex
+        justify-content center
+        align-items center
+        // background: red
+        & .joke
+            width 100%
+            height 100%
+            padding 12% 5%
+            display flex·
+            justify-content space-around
+            align-items center
+            flex-direction column
+            & h5
+                font-size 2.8vmin
+                font-weight 900
+                letter-spacing 0.15em
+
+            & h3
+                padding 5%
+                font-size 2.3vmin
+            & .jokeTitle
+                font-size 2.5vmin
+            & .jokeAns
+                color red
+                font-weight 900
+@media screen and (max-width: 768px) 
+    .content
+        width 100%
+        flex-wrap wrap
+
+        & .left, .right
+            width 100%
